@@ -1,3 +1,3 @@
 # mineui
 
-该目录用于前端实验
+use for web test
