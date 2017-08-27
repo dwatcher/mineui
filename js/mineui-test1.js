@@ -1,4 +1,4 @@
-$(function() {
+;$(function() {
   init();
 
   $('.mineui-input-radio').click(function() {
