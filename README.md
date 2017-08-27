@@ -1,3 +1,3 @@
 # mineui
 
-use for web test
+用于前端框架搭建实验
