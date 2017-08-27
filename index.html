@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://res.layui.com/layui/dist/css/layui.css"  media="all">
+  <title>Document</title>
+  <style media="screen">
+    .mineui-elem-field {
+      margin-bottom:10px;
+      padding:0;
+      border:1px solid #e2e2e2;
+    }
+    .mineui-elem-field legend {
+      margin-left:20px;
+      padding:0 10px;
+      font-size:20px;
+      font-weight:300;
+    }
+    .mineui-field-title {
+      margin:10px 0 20px;
+      border:none;
+      border-top:1px solid #e2e2e2;
+    }
+    .mineui-container-one {
+      padding: 10px;
+      margin: 10px;
+      float: left;
+      height: 300px;
+      width: 300px;
+      background-color: #FFF;
+    }
+    .mineui-form-item {
+      margin-bottom: 15px;
+      clear: both;
+      *zoom: 1;
+    }
+    .mineui-form-item label {
+      text-align: right;
+      font-size: 16px;
+      display: inline-block;
+      width: 50px;
+      height: 18px;
+      line-height: 18px;
+    }
+    .mineui-input-inline-block {
+      position: relative;
+      margin-left: 110px;
+      min-height: 36px;
+
+    }
+    .mineui-input-inline-block > i.mineui-input-radio-checked {
+      border-radius: 25px;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      vertical-align:middle; /* 水平居中 */
+      border: 2px solid #5FB878;
+      cursor: pointer;
+    }
+    .mineui-input-inline-block > i.mineui-input-radio-checked::after {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 15px;
+      background-color: #5FB878;
+    }
+    .mineui-anim-scaleSpring{
+      animation-name: mineui-scale-spring;
+      animation-duration: .3s;
+      animation-fill-mode: both;
+    }
+    @keyframes mineui-scale-spring {
+      0% {
+        opacity: .5;
+        transform: scale(.5);
+      }
+      80% {
+        opacity: .8;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("div.mineui-input-inline-block > i").click(function() {
+        console.log(this);
+        if ($(this).hasClass('mineui-anim-scaleSpring')) {
+          $(this).removeClass('mineui-anim-scaleSpring');
+          console.log('true');
+        } else {
+          $(this).addClass('mineui-anim-scaleSpring');
+          console.log('false');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <fieldset class="mineui-elem-field mineui-field-title mineui-container-one" style="margin-top: 20px;">
+    <legend>左上角</legend>
+    <div class="mineui-form-item">
+      <label>单选框</label>
+      <div class="layui-input-block mineui-input-inline-block">
+        <i class="mineui-input-radio-checked"></i>
+      </div>
+      <div class="layui-input-block mineui-input-inline-block">
+        <i class="mineui-input-radio-checked"></i>
+      </div>
+    </div>
+  </fieldset>
+
+</body>
+</html>
