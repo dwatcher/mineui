@@ -16,7 +16,7 @@ function init() {
   var radios = $('input[type="radio"]');
   var templet = '<div class="mineui-input-radio"><i></i><span>[input.value]</span></div>';
   for (var i = 0; i < radios.length; i++) {
-    var radio = templet.replace('[input.value]', radios.get(i).value);
-    $(radios.get(i)).after(radio);
+    var radio = templet.replace('[input.value]', radios.eq(i).val());
+    radio = radios.eq(i).after(radio);
   }
 }
