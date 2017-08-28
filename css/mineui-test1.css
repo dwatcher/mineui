@@ -1,14 +1,14 @@
-.mineui-input-radio {
+.mineui-radio {
   display: inline-block;
   height: 26px;
   vertical-align: middle;
   cursor: pointer;
   margin: 0 10px;
 }
-.mineui-input-block > input[type='radio'] {
+.mineui-block > input[type='radio'] {
   display: none;
 }
-.mineui-input-radio > i {
+.mineui-radio > i {
   border-radius: 25px;
   display: inline-block;
   height: 20px;
@@ -17,11 +17,11 @@
   border: 2px solid #AAA;
   margin: 0 3px;
 }
-.mineui-input-radio-checked > i {
+.mineui-radio-checked > i {
   border: 2px solid #5FB878;
 }
 
-.mineui-input-radio-checked > i::after {
+.mineui-radio-checked > i::after {
   content: '';
   display: block;
   height: 12px;
@@ -32,6 +32,19 @@
   border-radius: 6px;
   background-color: #5FB878;
 }
+
+.mineui-radio-disabled {
+  cursor: not-allowed !important;
+}
+
+.mineui-radio-disabled > i {
+  border-color: #D2D2D2 !important;
+}
+
+.mineui-radio-disabled > span {
+  color: #D2D2D2 !important;
+}
+
 .mineui-anim-scaleSpring{
   animation-name: mineui-scale-spring;
   animation-duration: .3s;
