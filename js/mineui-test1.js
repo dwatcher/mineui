@@ -7,7 +7,6 @@
 function radioClickEvent() {
   if ($(this).hasClass('mineui-radio-disabled')) { return ; }
   $(this).parent().find('.mineui-radio').removeClass('mineui-radio-checked').prev();
-  $(this).parent().find('.mineui-radio > i').removeClass('mineui-anim-scaleSpring');
   $('input[type="radio"]').parent().find('input[type="radio"]').removeAttr('checked');
 
   $(this).addClass('mineui-radio-checked');

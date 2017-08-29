@@ -4,3 +4,41 @@ body {
 .mineui-block {
   display: block;
 }
+
+.mineui-anim-scaleSpring {
+  animation-name: mineui-anim-scalesSpring;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+@keyframes mineui-anim-scalesSpring {
+  0% {
+    opacity: .5;
+    transform: scale(.5);
+  }
+  80% {
+    opacity: .8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mineui-anim-upbit {
+  animation-name: mineui-anim-upbit;
+  animation-duration: .2s;
+  animation-fill-mode: both;
+}
+
+@keyframes mineui-anim-upbit {
+  from {
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

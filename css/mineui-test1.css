@@ -44,23 +44,3 @@
 .mineui-radio-disabled > span {
   color: #D2D2D2 !important;
 }
-
-.mineui-anim-scaleSpring{
-  animation-name: mineui-scale-spring;
-  animation-duration: .3s;
-  animation-fill-mode: both;
-}
-@keyframes mineui-scale-spring {
-  0% {
-    opacity: .5;
-    transform: scale(.5);
-  }
-  80% {
-    opacity: .8;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
