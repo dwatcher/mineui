@@ -1,3 +1,6 @@
+.mineui-input-block select {
+  display: none;
+}
 .mineui-select {
   width: 190px;
   position: relative;
@@ -24,10 +27,15 @@
 }
 
 .mineui-select dl {
+  border: 1px solid #D6D6D6;
   width: inherit;
   position: absolute;
+  top: 42px;
   display: none;
   list-style-type: none;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .mineui-select dl dt, .mineui-select dl dd {
