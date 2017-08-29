@@ -27,10 +27,22 @@
   width: inherit;
   position: absolute;
   display: none;
+  list-style-type: none;
+}
+
+.mineui-select dl dt, .mineui-select dl dd {
+  margin: 0;
+  padding: 0 10px;
+  line-height: 36px;
 }
 
 .mineui-select-checked dl {
   width: inherit;
   position: absolute;
   display: block !important;
+}
+
+.mineui-select-checked dl dd:hover {
+  background-color: #000;
+  color: #FFF;
 }
